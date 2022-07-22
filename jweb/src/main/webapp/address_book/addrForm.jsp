@@ -11,19 +11,19 @@
 	<div id="container">
 		<h2>주소록 등록</h2>
 		<hr>
-		<form action = "./addrAdd.jsp" method="post">
-			<table id = "tbl">
+		<form action="./addrAdd.jsp" method="post">
+			<table id="tbl">
 				<tr>
 					<td>이름</td>
-					<td><input type="text" name="username" maxlength = 20 size=20></td>
+					<td><input type="text" name="username" maxlength=20 size=20></td>
 				</tr>
 				<tr>
 					<td>전화번호</td>
-					<td><input type="text" name="tel" maxlength = 20 size=20></td>
+					<td><input type="text" name="tel" maxlength=20 size=20></td>
 				</tr>
 				<tr>
 					<td>이메일</td>
-					<td><input type="text" name="email" maxlength = 20 size=20></td>
+					<td><input type="text" name="email" maxlength=20 size=20></td>
 				</tr>
 				<tr>
 					<td>성별</td>
@@ -40,10 +40,9 @@
 						<input type="reset" value="취소">
 					</td>
 				</tr>
-			
 			</table>
-		
 		</form>
+	
 	</div>
 </body>
 </html>

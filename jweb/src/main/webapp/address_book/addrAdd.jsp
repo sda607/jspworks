@@ -15,7 +15,7 @@
 <jsp:setProperty property="tel" name="addrBook"/>
 <jsp:setProperty property="email" name="addrBook"/>
 <jsp:setProperty property="gender" name="addrBook"/>
-<jsp:useBean id="abDAO" class="com.dao.AddrBookDAO"  scope = "application"/>
+<jsp:useBean id="abDAO" class="com.dao.AddrBookDAO" scope="application"/>
 <!-- scope : application(웹 페이지 전체를 공유, 저장 기능) -->
 <%
 	abDAO.add(addrBook);

@@ -4,10 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>서블릿에 요청하기</title>
+<title>유효성 검사</title>
+<script src="../../resources/js/validation.js"></script>
+
 </head>
 <body>
-	<form action="login2" method="post"> 
+	<form action="loginProcess.jsp" method="post" name="loginForm"> 
 		<p>
 			<label for = "userid"> 아이디 : </label>
 			<input type = "text" id="userid" name="userid">
@@ -16,9 +18,8 @@
 			<label for = "passwd"> 비밀번호 : </label>
 			<input type = "password" id="passwd" name="passwd">
 		</p>
-		<p><input type="hidden" name="phone" value="010-7979-3333">
-		<p><input type = "submit" value = "전송">
-	
+		<p><input type = "button" value = "로그인" onclick="checkForm()">
 	</form>
+	
 </body>
 </html>
