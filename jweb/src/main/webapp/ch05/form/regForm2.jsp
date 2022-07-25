@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>유효성 검사</title>
 <script>
 	//아이디 체크- 영문 소문자만 입력하도록 검사
 	//비밀번호 - 숫자

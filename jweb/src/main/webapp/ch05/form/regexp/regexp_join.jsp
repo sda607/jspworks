@@ -35,8 +35,9 @@
 			form.id.select();
 			return false;
 		}
-		if(pw == "" || !regExpPasswd.test(pw)){
-			alert("비밀번호는 숫자만 입력해주세요");
+		if(pw.length < 8 || pw.length > 12
+				|| !regExpPasswd.test(pw) || !regExpPasswd2.test(pw)){
+			alert("비밀번호는 영문자, 숫자, 특수문자 포함 8~12자로 입력해주세요");
 			form.passwd.select();
 			return false;
 		}
