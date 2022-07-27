@@ -9,9 +9,9 @@
 </head>
 <jsp:useBean id="abDAO" class="com.dao.AddrBookDAO" scope = "application"/>
 <%
-	String email =request.getParameter("email");
+	String email =request.getParameter("email"); //이메일 넘겨 받아
 	boolean result = abDAO.checkLogin(email);
-	
+	//체크 함수에 매개변수 전달
 	if(result){
 		session.setAttribute("sessionId", email); //세션발급
 	}else{
