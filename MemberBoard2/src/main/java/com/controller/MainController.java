@@ -49,8 +49,6 @@ public class MainController extends HttpServlet {
 			//페이지 이동
 		 nextPage =	"/memberForm.jsp";
 		}else if(command.equals("/addMember.do")) {
-			//힌글 인코딩
-			request.setCharacterEncoding("utf-8");
 
 			//가입 폼 입력값은 넘겨 받음
 			String memberid = request.getParameter("memberId");
