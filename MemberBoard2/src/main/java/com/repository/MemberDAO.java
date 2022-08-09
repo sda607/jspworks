@@ -23,7 +23,7 @@ public class MemberDAO {
 			String sql = "INSERT INTO t_member(memberid, passwd, name, gender) "
 					+ "VALUES (?, ?, ?, ?)";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, member.getMemberID());				//화면에 입력된 값을 DB 저장
+			pstmt.setString(1, member.getMemberId());				//화면에 입력된 값을 DB 저장
 			pstmt.setString(2, member.getPasswd());
 			pstmt.setString(3, member.getName());
 			pstmt.setString(4, member.getGender());
@@ -48,7 +48,7 @@ public class MemberDAO {
 			rs = pstmt.executeQuery();				//select 실행문
 			while(rs.next()) {
 				Member member = new Member();
-				member.setMemberID(rs.getString("memberid"));
+				member.setMemberId(rs.getString("memberid"));
 				member.setPasswd(rs.getString("passwd"));
 				member.setName(rs.getString("name"));
 				member.setGender(rs.getString("gender"));
@@ -94,7 +94,7 @@ public class MemberDAO {
 				pstmt.setString(1, memberId);
 				rs = pstmt.executeQuery();
 				if(rs.next()) {
-					member.setMemberID(rs.getString("memberId"));
+					member.setMemberId(rs.getString("memberId"));
 					member.setPasswd(rs.getString("passwd"));
 					member.setName(rs.getString("name"));
 					member.setGender(rs.getString("gender"));
@@ -141,6 +141,9 @@ public class MemberDAO {
 		}
 	}
 	
+	
+
+	
 	//회원 수정
 	public void updateMember(Member member) {
 		try {
@@ -151,7 +154,7 @@ public class MemberDAO {
 			pstmt.setString(1, member.getPasswd());
 			pstmt.setString(2, member.getName());
 			pstmt.setString(3, member.getGender());
-			pstmt.setString(4, member.getMemberID());
+			pstmt.setString(4, member.getMemberId());
 			pstmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();

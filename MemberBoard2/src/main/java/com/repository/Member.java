@@ -7,18 +7,18 @@ public class Member implements Serializable {
 
 		private static final long serialVersionUID = 1L;
 		
-		private String memberID;
+		private String memberId;
 		private String passwd;
 		private String name;
 		private String gender;
 		private Date joinDate;
 		
 		
-		public String getMemberID() {
-			return memberID;
+		public String getMemberId() {
+			return memberId;
 		}
-		public void setMemberID(String memberID) {
-			this.memberID = memberID;
+		public void setMemberId(String memberId) {
+			this.memberId = memberId;
 		}
 		public String getPasswd() {
 			return passwd;
