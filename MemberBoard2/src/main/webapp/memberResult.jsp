@@ -23,12 +23,16 @@
 					<h2>회원 가입을 축하합니다.</h2>
 				</c:when>
 				<c:when test="${msg eq 'update'}">
+					<h2>회원 정보가 수정되었습니다.</h2>
+				</c:when>
+				<c:when test="${msg eq 'bo_delete'}">
+					<h2>게시글이 삭제되었습니다.</h2>
+				</c:when>
+				<c:when test="${msg eq 'update'}">
 					<h2>회원 정보가 수정 되었습니다.</h2>
 				</c:when>
 			</c:choose>
 		</div>
-		
-		
 	</div>
 	<jsp:include page="./footer.jsp"/> <!--같은 페이지 (상대경로)-->
 </body>
